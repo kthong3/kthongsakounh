@@ -2,9 +2,16 @@ import React, { Component } from 'react'
 
 class Resume extends Component {
   render() {
+    const skills = this.props.content.map((skill) => 
+      <li>{skill}</li>
+    )
+
     return (
       <div>
-        <p>{this.props.content}</p>
+        <h3>skills</h3>
+        <ul>
+          {skills}
+        </ul>
       </div>
     )
   }
