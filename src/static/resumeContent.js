@@ -97,8 +97,20 @@ const tcSDET = {
   ]
 }
 
+const experience = [
+  avalonRisk,
+  lasalleNetwork,
+  derickDerm, 
+  tcApprentice,
+  tcSDET
+]
+
+const education = [ uic, dbc ]
+
 const resumeContent = [
-  {key: 'skills', content: skills},
+  { key: 'skills', content: skills },
+  { key: 'experience', content: experience },
+  { key: 'education', content: education }
 ]
 
 export default resumeContent
