@@ -1,13 +1,13 @@
 import React from 'react'
+import Resume from './components/Resume'
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        hello world
-      </div>
-    )
-  }
+function App () {
+
+  return (
+    <div className='resume-container'>
+      <Resume />
+    </div>
+  )
 }
 
 export default App
