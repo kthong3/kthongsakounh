@@ -1,5 +1,6 @@
 import React from 'react'
 import resumeContent from '../static/resumeContent'
+import '../style/App.css'
  
 function Resume(props) {
   const [skills, experience, education] = resumeContent
@@ -32,20 +33,25 @@ function Resume(props) {
   )
 
   return (
-    <div>
-        Skills
-        <ul>
-          {skillsList}
-        </ul>
-        <br />  
-        Experience
-        <ul>
-          {experienceList}
-        </ul>
-        Education
-        <ul>
-          {educationList}
-        </ul>
+    <div className='resume-content'>
+        <div>
+          <h2>Skills</h2>
+          <ul>
+            {skillsList}
+          </ul>
+        </div>
+        <div>
+          <h2>Experience</h2>
+          <ul>
+            {experienceList}
+          </ul>
+        </div>
+        <div>
+          <h2>Education</h2>
+          <ul>
+            {educationList}
+          </ul>
+        </div>
     </div>
   )
 }
