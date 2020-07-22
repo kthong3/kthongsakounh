@@ -1,11 +1,12 @@
 import React from 'react'
-import Resume from './components/Resume'
+import Nav from './components/Nav'
+import './style/App.css'
 
 function App () {
 
   return (
-    <div className='resume-container'>
-      <Resume />
+    <div className='main-container'>
+      <Nav />
     </div>
   )
 }
