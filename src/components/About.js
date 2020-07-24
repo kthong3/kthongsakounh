@@ -5,11 +5,11 @@ function About(props) {
 
   return (
     <div>
-      {about.name},
-      {about.intro}, 
-      {about.description}, 
-      {about.dbc}, 
-      {about.opportunity}
+      <h1>{about.name}</h1>
+      <div>{about.intro}</div>
+      <div>{about.description}</div>
+      <div>{about.dbc}</div>
+      <div>{about.opportunity}</div>
     </div>
   )
 }
