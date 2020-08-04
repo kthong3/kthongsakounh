@@ -16,19 +16,33 @@ import {
   Route,
   Link,
 } from 'react-router-dom'
+import './style/App.css'
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: "#000",
+    backgroundColor: '#000',
   },
   navBar:{
     flexGrow: 1,
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   navList: {
     listStyleType: 'none',
     display: 'flex',
     justifyContent: 'flex-end',
   },
+  navListItem: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    paddingLeft: '15px',
+    color: 'white',
+  },
+  navLink: {
+    textDecoration: 'none',
+    color: 'white',
+  },  
   banner: {
     backgroundImage: `url(${bgImg})`,
     height: '500px',
@@ -40,7 +54,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
     color: '#fff',
-    fontSize: '4em'
+    fontSize: '4em',
+    fontFamily: `'Lato', sans-serif`,
   }
 }))
 
@@ -52,21 +67,24 @@ function App() {
       <Router>
         <AppBar className={classes.appBar} position="static">
           <Toolbar>
-            <Typography variant="h6" color="primary" className={classes.navBar}>
+            <Typography
+              variant="h6"
+              color="primary" 
+              className={classes.navBar}>
+              <Box>Logo</Box>
               <Box>
                 <ul className={classes.navList}>
-                  <li>
-                    <Link to='/about'>About Me</Link>
+                  <li className={classes.navListItem}>
+                    <Link to='/about' className={classes.navLink}>About Me</Link>
                   </li>
-                  <li>
-                    <Link to='/resume'>Resume</Link>
+                  <li className={classes.navListItem}>
+                    <Link to='/resume' className={classes.navLink}>Resume</Link>
                   </li>
-                  <li>
-                    <Link to='/contact'>Contact</Link>
+                  <li className={classes.navListItem}>
+                    <Link to='/contact' className={classes.navLink}>Contact</Link>
                   </li>
                 </ul>
               </Box>
-              <Box></Box>
             </Typography>
           </Toolbar>
         </AppBar>
@@ -78,17 +96,17 @@ function App() {
         </Box>
 
         <Container>
-            <Switch>
-              <Route path='/about'>
-                <About />
-              </Route>
-              <Route path='/resume'>
-                <Resume />
-              </Route>
-              <Route path='/contact'>
-                <Contact />
-              </Route>
-            </Switch>
+          <Switch>
+            <Route path='/about'>
+              <About />
+            </Route>
+            <Route path='/resume'>
+              <Resume />
+            </Route>
+            <Route path='/contact'>
+              <Contact />
+            </Route>
+          </Switch>
         </Container>
       </Router>
     </div>
