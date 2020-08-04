@@ -1,16 +1,33 @@
 import React from 'react'
-import Nav from './components/Nav'
 import './style/App.css'
 import { makeStyles } from '@material-ui/core/styles'
+import Box from '@material-ui/core/Box'
+import bgImg from './assets/jesse-schoff-Jur3IpOce6E-unsplash.jpg'
+import Container from '@material-ui/core/Container'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
-import Box from '@material-ui/core/Box'
-import bgImg from './assets/jesse-schoff-Jur3IpOce6E-unsplash.jpg'
+import About from './components/About'
+import Resume from './components/Resume'
+import Contact from './components/Contact'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+} from 'react-router-dom'
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: "#000"
+    backgroundColor: "#000",
+  },
+  navBar:{
+    flexGrow: 1,
+  },
+  navList: {
+    listStyleType: 'none',
+    display: 'flex',
+    justifyContent: 'flex-end',
   },
   banner: {
     backgroundImage: `url(${bgImg})`,
@@ -27,24 +44,53 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-function App () {
+function App() {
   const classes = useStyles();
 
   return (
     <div>
-      <AppBar className={classes.appBar} position="static">
-        <Toolbar>
-          <Typography variant="h6" color="primary">
-            Home
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <Box className={classes.banner}>
-        <Box>
-          Katherine Thongsakounh
+      <Router>
+        <AppBar className={classes.appBar} position="static">
+          <Toolbar>
+            <Typography variant="h6" color="primary" className={classes.navBar}>
+              <Box>
+                <ul className={classes.navList}>
+                  <li>
+                    <Link to='/about'>About Me</Link>
+                  </li>
+                  <li>
+                    <Link to='/resume'>Resume</Link>
+                  </li>
+                  <li>
+                    <Link to='/contact'>Contact</Link>
+                  </li>
+                </ul>
+              </Box>
+              <Box></Box>
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        
+        <Box className={classes.banner}>
+          <Box>
+            Katherine Thongsakounh
+          </Box>
         </Box>
-      </Box>
-      <Nav />
+
+        <Container>
+            <Switch>
+              <Route path='/about'>
+                <About />
+              </Route>
+              <Route path='/resume'>
+                <Resume />
+              </Route>
+              <Route path='/contact'>
+                <Contact />
+              </Route>
+            </Switch>
+        </Container>
+      </Router>
     </div>
   )
 }
