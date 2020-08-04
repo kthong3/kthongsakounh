@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: '#000',
   },
-  navBar:{
+  navBar: {
     flexGrow: 1,
     display: 'flex',
     justifyContent: 'space-between',
@@ -56,6 +56,11 @@ const useStyles = makeStyles((theme) => ({
     color: '#fff',
     fontSize: '4em',
     fontFamily: `'Lato', sans-serif`,
+  },
+  content: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   }
 }))
 
@@ -95,7 +100,7 @@ function App() {
           </Box>
         </Box>
 
-        <Container>
+        <Container maxWidth='lg' className={classes.content}>
           <Switch>
             <Route path='/about'>
               <About />
