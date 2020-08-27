@@ -6,7 +6,11 @@ function Resume(props) {
   const [skills, experience, education] = resumeContent
   
   const skillsList = skills.content.map((skill) => 
-    <li>{skill}</li>
+    <li>
+      <div>
+        {skill}
+      </div>
+    </li>
   )
   
   const experienceList = experience.content.map((exp) =>
@@ -33,25 +37,25 @@ function Resume(props) {
   )
 
   return (
-    <div className='resume-content'>
-        <div>
-          <h2>Skills</h2>
-          <ul>
-            {skillsList}
-          </ul>
-        </div>
-        <div>
-          <h2>Experience</h2>
-          <ul>
-            {experienceList}
-          </ul>
-        </div>
-        <div>
-          <h2>Education</h2>
-          <ul>
-            {educationList}
-          </ul>
-        </div>
+    <div>
+      <div>
+        <h2>Skills</h2>
+        <ul>
+          {skillsList}
+        </ul>
+      </div>
+      <div>
+        <h2>Experience</h2>
+        <ul>
+          {experienceList}
+        </ul>
+      </div>
+      <div>
+        <h2>Education</h2>
+        <ul>
+          {educationList}
+        </ul>
+      </div>
     </div>
   )
 }

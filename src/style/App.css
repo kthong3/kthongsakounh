@@ -1,12 +1,8 @@
 body {
-  background-image: url('../assets/jesse-schoff-Jur3IpOce6E-unsplash.jpg');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-color: black;
-  background-size: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.resume-container {
+.main-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,7 +17,6 @@ body {
   padding: 30px 20px 0;
   width: 100%;
   border-bottom: 1px solid #cecece;
-  font-family: Roboto, sans-serif;
   font-weight: 100;
   font-size: 15px;
   color: #333333;
