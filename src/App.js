@@ -7,6 +7,7 @@ import Container from '@material-ui/core/Container'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
+import Grid from '@material-ui/core/Grid'
 import About from './components/About'
 import Resume from './components/Resume'
 import Contact from './components/Contact'
@@ -101,17 +102,21 @@ function App() {
         </Box>
 
         <Container maxWidth='lg' className={classes.content}>
-          <Switch>
-            <Route path='/about'>
-              <About />
-            </Route>
-            <Route path='/resume'>
-              <Resume />
-            </Route>
-            <Route path='/contact'>
-              <Contact />
-            </Route>
-          </Switch>
+          <Grid container spacing={3}>
+            <Switch>
+              <Route path='/about'>
+                <Grid item xs={12} sm={6} md={4}>
+                  <About />
+                </Grid>
+              </Route>
+              <Route path='/resume'>
+                <Resume />
+              </Route>
+              <Route path='/contact'>
+                <Contact />
+              </Route>
+            </Switch>
+           </Grid> 
         </Container>
       </Router>
     </div>
