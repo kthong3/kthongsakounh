@@ -17,6 +17,7 @@ import {
   Route,
   Link,
 } from 'react-router-dom'
+import { createBrowserHistory } from "history";
 import './style/App.css'
 
 const useStyles = makeStyles((theme) => ({
@@ -62,15 +63,17 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    color: 'white',
   }
 }))
 
 function App() {
   const classes = useStyles();
+  const history = createBrowserHistory();
 
   return (
     <div>
-      <Router>
+      <Router history={history}>
         <AppBar className={classes.appBar} position="static">
           <Toolbar>
             <Typography
