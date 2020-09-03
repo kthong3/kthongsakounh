@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.5fa23289.chunk.css",
-    "main.js": "/static/js/main.c66cca45.chunk.js",
-    "main.js.map": "/static/js/main.c66cca45.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e6560652.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e6560652.js.map",
-    "static/js/2.d5973950.chunk.js": "/static/js/2.d5973950.chunk.js",
-    "static/js/2.d5973950.chunk.js.map": "/static/js/2.d5973950.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.e7045a8746d41782ac9382cc0ccc3b9d.js": "/precache-manifest.e7045a8746d41782ac9382cc0ccc3b9d.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.5fa23289.chunk.css.map": "/static/css/main.5fa23289.chunk.css.map",
-    "static/js/2.d5973950.chunk.js.LICENSE.txt": "/static/js/2.d5973950.chunk.js.LICENSE.txt",
-    "static/media/jesse-schoff-Jur3IpOce6E-unsplash.jpg": "/static/media/jesse-schoff-Jur3IpOce6E-unsplash.77f530ea.jpg"
+    "main.css": "/kthongsakounh.com/static/css/main.5fa23289.chunk.css",
+    "main.js": "/kthongsakounh.com/static/js/main.c66cca45.chunk.js",
+    "main.js.map": "/kthongsakounh.com/static/js/main.c66cca45.chunk.js.map",
+    "runtime-main.js": "/kthongsakounh.com/static/js/runtime-main.5e23830b.js",
+    "runtime-main.js.map": "/kthongsakounh.com/static/js/runtime-main.5e23830b.js.map",
+    "static/js/2.d5973950.chunk.js": "/kthongsakounh.com/static/js/2.d5973950.chunk.js",
+    "static/js/2.d5973950.chunk.js.map": "/kthongsakounh.com/static/js/2.d5973950.chunk.js.map",
+    "index.html": "/kthongsakounh.com/index.html",
+    "precache-manifest.104eac48fab368be0b9ebc599a221863.js": "/kthongsakounh.com/precache-manifest.104eac48fab368be0b9ebc599a221863.js",
+    "service-worker.js": "/kthongsakounh.com/service-worker.js",
+    "static/css/main.5fa23289.chunk.css.map": "/kthongsakounh.com/static/css/main.5fa23289.chunk.css.map",
+    "static/js/2.d5973950.chunk.js.LICENSE.txt": "/kthongsakounh.com/static/js/2.d5973950.chunk.js.LICENSE.txt",
+    "static/media/jesse-schoff-Jur3IpOce6E-unsplash.jpg": "/kthongsakounh.com/static/media/jesse-schoff-Jur3IpOce6E-unsplash.77f530ea.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e6560652.js",
+    "static/js/runtime-main.5e23830b.js",
     "static/js/2.d5973950.chunk.js",
     "static/css/main.5fa23289.chunk.css",
     "static/js/main.c66cca45.chunk.js"
