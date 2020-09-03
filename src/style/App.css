@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: black;
 }
 
 .main-container {
@@ -19,5 +20,5 @@ body {
   border-bottom: 1px solid #cecece;
   font-weight: 100;
   font-size: 15px;
-  color: #333333;
+  color: whitesmoke;
 }
