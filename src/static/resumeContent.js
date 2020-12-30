@@ -98,9 +98,6 @@ const tcSDET = {
 }
 
 const experience = [
-  avalonRisk,
-  lasalleNetwork,
-  derickDerm, 
   tcApprentice,
   tcSDET
 ]

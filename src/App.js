@@ -17,7 +17,6 @@ import {
   Route,
   Link,
 } from 'react-router-dom'
-import { createBrowserHistory } from "history";
 import './style/App.css'
 
 const useStyles = makeStyles((theme) => ({
@@ -69,11 +68,10 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   const classes = useStyles();
-  const history = createBrowserHistory();
 
   return (
     <div>
-      <Router history={history}>
+      <Router>
         <AppBar className={classes.appBar} position="static">
           <Toolbar>
             <Typography
@@ -107,15 +105,15 @@ function App() {
         <Container maxWidth='lg' className={classes.content}>
           <Grid container spacing={3}>
             <Switch>
-              <Route path='/about'>
+              <Route exact path='/about'>
                 <Grid item xs={12} sm={6} md={4}>
                   <About />
                 </Grid>
               </Route>
-              <Route path='/resume'>
+              <Route exact path='/resume'>
                 <Resume />
               </Route>
-              <Route path='/contact'>
+              <Route exact path='/contact'>
                 <Contact />
               </Route>
             </Switch>
